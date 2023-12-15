@@ -55,6 +55,7 @@
 
 .link {
   text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
 }
 
 .link:hover {
@@ -78,6 +79,12 @@
   gap: 10px;
   inset-inline-end: 20px;
   inset-block-start: 10px;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--accent-color, #ff0070);
 }
 
 .rec-decor::before {
@@ -112,6 +119,12 @@
 }
 
 .title-decor {
+  font-weight: 700;
+  color: var(--highlight-color, #000028);
+  background: var(--accent-color, #ff0070);
+}
+
+.title-decor-special {
   font-weight: 400;
   color: var(--highlight-color, #000028);
   background: var(--accent-color, #ff0070);
