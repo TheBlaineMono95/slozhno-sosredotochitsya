@@ -1,7 +1,7 @@
 /* Вспомогательные классы */
 
 .shadow-decor {
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
 /* Глобальные компоненты */
@@ -58,15 +58,15 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--text-color, #f1b2ce);
 }
 
 .link:focus {
-  outline: 0;
+  outline: none;
 }
 
 .link:focus-visible {
-  outline: 1px solid inherit;
+  outline: 1px solid var(--text-color, #f1b2ce);
 }
 
 .rec-decor {
@@ -81,7 +81,7 @@
 }
 
 .rec-decor::before {
-  content: "REC";
+  content: "";
   color: var(--accent-color, #ff0070);
   line-height: 24px;
 }
@@ -90,7 +90,7 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 4px var(--accent-color, #ff0070);
   background: var(--accent-color, #ff0070);
   block-size: 9px;
   inline-size: 9px;
@@ -112,6 +112,7 @@
 }
 
 .title-decor {
+  font-weight: 400;
   color: var(--highlight-color, #000028);
   background: var(--accent-color, #ff0070);
 }
@@ -127,6 +128,7 @@
 
 .section-how__title {
   margin-block-end: 20px;
+  font-weight: 700;
 }
 
 .articles-list {
@@ -180,8 +182,9 @@
 }
 
 .header__theme-menu-button_active {
-  border-color: inherit;
+  border-color: currentColor;
   cursor: default;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -193,7 +196,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end-color: inherit;
+  border-block-end-color: currentColor;
 }
 
 .header__title {
@@ -217,6 +220,10 @@
 
 .footer {
   place-items: center;
+}
+
+.shadow-decor-footer {
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
 /* Блок медиазапросов */
@@ -286,6 +293,10 @@
 @media (width >= 1024px) {
   .page-title {
     text-shadow: 4px 4px 0 var(--color-purple-2, #ff0070);
+  }
+
+  .shadow-decor-footer {
+    text-shadow: 2px 2px 0 var(--color-purple-2, #ff0070);
   }
 
   .section {
