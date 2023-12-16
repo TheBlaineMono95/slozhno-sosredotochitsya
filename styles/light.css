@@ -7,7 +7,7 @@
   --rec-decor-visibility: hidden;
   --highlight-color: var(--color-black-2, #353430);
   --secondary-color: var(--color-black-2, #353430);
-  --secondary-color-o-40: var(--color-black-3-o-40: #32312d40);
+  --secondary-color-o-40: var(--color-black-3-o-40, #32312d40);
 }
 
 @media (prefers-color-scheme: light) {
