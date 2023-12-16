@@ -84,6 +84,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
+  text-transform: uppercase;
   color: var(--accent-color, #ff0070);
 }
 
@@ -97,7 +98,7 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 4px 4px var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   background: var(--accent-color, #ff0070);
   block-size: 9px;
   inline-size: 9px;
