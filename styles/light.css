@@ -18,7 +18,7 @@
     --highlight-color: var(--color-black-2, #353430);
     --secondary-color: var(--color-black-2, #353430);
     --page-background-color: var(--color-pink-1, #fff1f7);
-    --secondary-color-o-40: var(--color-black-3-o-40, #35343040);
+    --secondary-color-o-40: var(--color-black-3-o-40, #32312d40);
     --page-background-image: url("../images/cover-image-light.png");
     --rec-decor-visibility: hidden;
   }
